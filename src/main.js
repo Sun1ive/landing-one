@@ -1,5 +1,8 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify';
+import AOS from 'aos';
+import $ from 'jquery';
+import 'aos/dist/aos.css';
 import './stylus/main.styl';
 import App from './App';
 

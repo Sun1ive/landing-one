@@ -159,6 +159,7 @@
           </v-flex>
         </v-layout>
       </section>
+      <app-time></app-time>
       <section id="map">
         <v-container fluid>
           <v-layout column wrap align-center>
@@ -198,8 +199,12 @@
 import AOS from 'aos';
 import $ from 'jquery';
 import 'aos/dist/aos.css';
+import TimeTo from './components/TimeTo';
 
 export default {
+  components: {
+    'app-time': TimeTo,
+  },
   data() {
     return {
       user: {
@@ -317,6 +322,7 @@ export default {
   /* background-size: cover; */
 }
 .goShop {
+  /* something */
 }
 .carousel__item {
   transition: 1s;
@@ -362,7 +368,6 @@ export default {
 }
 .userForm {
   padding: 25px;
-  border-radius: 10px;
   border: 1px solid #f2e3d2;
   background-color: #fff;
   box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
